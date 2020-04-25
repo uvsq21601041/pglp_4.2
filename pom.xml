@@ -16,6 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <checkstyle.config.location>config/maven_checks.xml</checkstyle.config.location>
   </properties>
 
   <dependencies>
@@ -69,6 +70,35 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.9.1</version>
+            </plugin>
+ 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+
+
+        
+        <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>findbugs-maven-plugin</artifactId>
+              <version>3.0.4</version> <!--have modified this -->
+              <configuration>
+                  <xmlOutput>true</xmlOutput>
+                  <!-- Optional directory to put findbugs xdoc xml report -->
+                  <xmlOutputDirectory>target/site</xmlOutputDirectory>
+              </configuration>
+         </plugin>
+          <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jxr-plugin</artifactId>
+    <version>2.3</version>
+  </plugin>
       </plugins>
     </pluginManagement>
   </build>
