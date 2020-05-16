@@ -3,7 +3,7 @@ package calculator;
 import java.util.Scanner;
 
 /**
- * The main of the program
+ * The main of theprogram
  */
 public class CalculatorMain {
 
@@ -13,7 +13,7 @@ public class CalculatorMain {
      * start the program
      */
     public void start() {
-        System.out.println("------------ Welcome to use RPN calculator ---------------");
+        System.out.println("----------- Welcome to use RPN calculator --------------");
         while (true) {
             System.out.println("Please Enter arithmetic formula (u for UNDO, q for Quit): ");
             String line = in.nextLine();
