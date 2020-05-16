@@ -15,7 +15,7 @@ public class CalculatorMain {
     public void start() {
         System.out.println("---------- Welcome to use RPN calculator -------------");
         while (true) {
-            System.out.println("Please Enter arithmetic formula (u for UNDO, q for Quit): ");
+            System.out.println("Entrez arithmetic formula (u for UNDO, q for Quit): ");
             String line = in.nextLine();
             if ("u".equalsIgnoreCase(line)) {
                 String res = new UndoCommand().handle(line);
