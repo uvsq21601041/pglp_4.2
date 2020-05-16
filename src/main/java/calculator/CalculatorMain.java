@@ -3,7 +3,7 @@ package calculator;
 import java.util.Scanner;
 
 /**
- * The main of theprogram
+ * The main of the program
  */
 public class CalculatorMain {
 
